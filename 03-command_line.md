@@ -42,6 +42,12 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > >
 > >
 > > copying a file from one directory to another: cp filename newdir/filename
+> >
+> >
+> > printing lines of a file that contain a regular expression "regexp": grep "regexp" filename
+> > 
+> >
+> > finding differences between two files: diff file1 file2
 
 ---
 
@@ -83,7 +89,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs handles outputs that are being used as arguments for another command, and it's especially useful in handling spaces, tabs, and newlines.  For example, "find \*fp\*" will print out all files with file names that contain "fp".  Using "find \*fp\* | xargs -n 2 diff" will take the outputs from find, and use the first two files as inputs for the "diff" command.  If the filenames include spaces, this can be changed to "find \*fp\* | xargs -n 2 -0 diff" and it will handle the spaces for you.
 
  
 
