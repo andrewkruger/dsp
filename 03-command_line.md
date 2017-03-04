@@ -22,30 +22,26 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > show current working directory path:
 > > pwd
 > >
-> > creating a directory:
+> >
+> > creating a directory: mkdir dirname
 > > 
-> > mkdir dirname
 > > 
-> > 
-> > deleting a directory:
-> > 
-> > rm -r dirname
+> > deleting a directory: rm -r dirname
 > > 
 > >
-> > creating a file using `touch` command
-> > touch filename
-> > 
-> > deleting a file
-> > rm filename
-> > 
-> > renaming a file
-> > mv filename newfilename
-> > 
-> > listing hidden files
-> > ls -a
+> > creating a file using `touch` command: touch filename
 > >
-> > copying a file from one directory to another
-> > cp filename newdir/filename
+> > 
+> > deleting a file: rm filename
+> >
+> > 
+> > renaming a file: mv filename newfilename
+> > 
+> >
+> > listing hidden files: ls -a
+> >
+> >
+> > copying a file from one directory to another: cp filename newdir/filename
 
 ---
 
