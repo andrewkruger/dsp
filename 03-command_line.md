@@ -76,7 +76,7 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > Ones I didn't know about and like:
+> > Five I didn't know about and like:
 > > ls -R: file list of current directory and subdirectories, which would save time rather than searching subdirectories one at a time.
 > > ls -c: sort by oldest files first
 > > ls -r: reverse order of file list
@@ -89,7 +89,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > xargs handles outputs that are being used as arguments for another command, and it's especially useful in handling spaces, tabs, and newlines.  For example, "find \*fp\*" will print out all files with file names that contain "fp".  Using "find \*fp\* | xargs -n 2 diff" will take the outputs from find, and use the first two files as inputs for the "diff" command.  If the filenames include spaces, this can be changed to "find \*fp\* | xargs -n 2 -0 diff" and it will handle the spaces for you.
+> > xargs handles outputs that are being used as arguments for another command, and it's especially useful in handling spaces, tabs, and newlines.  For example, "find \*fp\*" will print out all files with file names that contain "fp".  Using "find \*fp\* | xargs -n 2 diff" will take the outputs from find, and use the first two files as inputs for the "diff" command.  If the filenames include spaces, this can be changed to "find \*fp\* -print0 | xargs -n 2 -0 diff" and it will handle the spaces.
 
  
 
