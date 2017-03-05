@@ -39,7 +39,7 @@ If you use a Mac, install Homebrew if you don't
 have it yet. You could use Homebrew to manage your `git` and `python`
 installs as well, but the methods given above are very good and more
 cross-platform.
-
+ 
 ---
 
 ###Q1. Python Version 2 or 3
