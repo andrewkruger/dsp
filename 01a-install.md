@@ -48,7 +48,7 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> Python 2 because I'm afraid of change, and the programs I've been using are for Python 2.  Actually, I have Python 3 installed as well.
+>> Python 2 the programs I've been using were for this version (ie. sklearn, syntax with printing, etc).  I also have Python 3 installed, and I can call it by using the command python3.
 
 ###Q2. Which Python Version Installed   
 
