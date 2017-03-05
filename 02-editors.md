@@ -90,5 +90,5 @@ What terminal editor will be your preferred choice of use? How did you make your
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
 >> I've been using Spyder, so I'll likely use that at least to start.  I like it because it has tabs for editing multiple files at once, has nice features like a variable explorer and history log, and it organizes the windows well (python console, files, explorers, etc).  The only shortcut I find useful is F5 for running a file.  I like the default layout settings, and haven't had any need to make changes, so I haven't done any customization.  However, I'm interested if there are shortcuts and customizations worth using.
-
+ 
  
