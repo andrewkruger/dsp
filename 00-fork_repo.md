@@ -69,7 +69,8 @@ Here's your first chance to practice this:
 
 What is your favorite emoji?  (Check out this [emoji cheat sheet](http://www.emoji-cheat-sheet.com/).)
 
->> :alien:
+>> Using git :interrobang:
 >>
->>  ---Just adding stuff to try git instead... :interrobang: 
+>> Using github: :alien:
+ 
 
