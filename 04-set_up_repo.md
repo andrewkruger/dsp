@@ -2,6 +2,120 @@
 
 Before you start, please take 15 minutes to [Try Git](https://try.github.io/levels/1/challenges/1). It does a great job at explaining the basic concepts, which we will be using for this part of the pre-work. 
 
+
+> NOTES... Just putting them here so I can refer to them
+> 
+> =============== Local Repository ======================
+> 
+> Initialize Git repository
+> 
+> `$ git init`
+> 
+> 
+> View a log of changes to repository
+> 
+> `$ git log`
+> 
+> 
+> Get current status of repository
+> (Untracked files show in red)
+> 
+> `$ git status`
+>            
+> 
+> Start tracking a file by adding to staging area
+> 
+> `$ git add <file name>`
+> 
+> 
+> Delete files in repo
+> 
+> `$ git rm <file name>`
+> 
+> 
+> Commit new changes shown in staging area to the repository
+> 
+> `$ git commit -m "Commit message"`
+> 
+> 
+> Unstage a file
+> 
+> `$ git reset <file name>`
+> 
+> 
+> Change a file back to how it was at the last commit
+> 
+> `$ git checkout -- <file name>`
+> 
+> 
+> Create branch to test edit file
+> 
+> `$ git branch <branch name>`
+> 
+> 
+> View branches
+> 
+> `$ git branch`
+> 
+> 
+> Switch to a branch
+> 
+> `$ git checkout <branch name>`
+> 
+> 
+> Create branch and checkout in single command
+> 
+> `$ git checkout -b <branch name>`
+> 
+> 
+> Merge changes in a branch to the master
+> 
+> `$ git checkout master`
+> 
+> `$ git merge <branch name>`
+> 
+> 
+> Delete branch
+> 
+> `$ git branch -d <branch name>`
+> 
+> 
+> =============== Remote Repository =====================
+> 
+> 
+> Add remote repository and create repository name
+> 
+> `$ git remote add <repo name> <URL, ie. https://github.com/andrewkruger/repo.git>`
+> 
+> 
+> Tell Git where to put commits
+> 
+> `$ git push -u <repo name> master`
+> 
+> 
+> Just push commits
+> 
+> `$ git push`
+> 
+> 
+> Check for changes, pull down any new changes
+> 
+> `$ git pull <repo name> master`
+> 
+> 
+> Look at what's different from our last commit
+> 
+> `$ git diff HEAD`
+> 
+> 
+> Look at changes in files that have been staged
+> 
+> `$ git add <file name>`
+> 
+> `$ git diff --staged`
+> 
+
+
 ## Step 1: Sign up for GitHub
 
 You will need a GitHub account.
