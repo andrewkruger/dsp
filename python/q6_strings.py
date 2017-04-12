@@ -24,6 +24,7 @@ def donuts(count):
       return str_out+'many'
     raise NotImplementedError
 
+print '\ndonuts:'
 print donuts(4)
 print donuts(9)
 print donuts(10)
@@ -50,6 +51,7 @@ def both_ends(s):
       return ''
     raise NotImplementedError
 
+print '\nboth_ends:'
 print both_ends('spring')
 print both_ends('Hello')
 print both_ends('a')
@@ -75,6 +77,7 @@ def fix_start(s):
     return s
     raise NotImplementedError
 
+print '\nfix_start:'
 print fix_start('babble')
 print fix_start('aardvark')
 print fix_start('google')
@@ -97,6 +100,7 @@ def mix_up(a, b):
     return b[:2]+a[2:]+' '+a[:2]+b[2:]
     raise NotImplementedError
 
+print '\nmix_up:'
 print mix_up('mix', 'pod')
 print mix_up('dog', 'dinner')
 print mix_up('gnash', 'sport')
@@ -123,6 +127,7 @@ def verbing(s):
       return s+'ing'
     raise NotImplementedError
 
+print '\nverbing:'
 print verbing('hail')
 print verbing('swiming')
 print verbing('do')
@@ -143,8 +148,19 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    not_str = s.find('not')
+    if not_str != -1:
+      bad_str = s.find('bad',not_str)
+      if bad_str != -1:
+        return s[:not_str]+'good'+s[bad_str+3:]
+    return s
     raise NotImplementedError
 
+print '\nnot_bad:'
+print not_bad('This movie is not so bad')
+print not_bad('This dinner is not that bad!')
+print not_bad('This tea is not hot')
+print not_bad("It's bad yet not")
 
 def front_back(a, b):
     """
@@ -161,4 +177,12 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    ma = len(a)/2+len(a)%2
+    mb = len(b)/2+len(b)%2
+    return a[:ma]+b[:mb]+a[ma:]+b[mb:]
     raise NotImplementedError
+
+print '\nfront_back:'
+print front_back('abcd', 'xy')
+print front_back('abcde', 'xyz')
+print front_back('Kitten', 'Donut')
