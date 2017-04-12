@@ -77,7 +77,16 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
+    n_out = [nums[0]]
+    for i in range(1,len(nums)):
+      if nums[i] != nums[i-1]:
+        n_out.append(nums[i])
+    return n_out
     raise NotImplementedError
+
+print remove_adjacent([1, 2, 2, 3])
+print remove_adjacent([2, 2, 3, 3, 3])
+print remove_adjacent([3, 2, 3, 3, 3])
 
 
 def linear_merge(list1, list2):
