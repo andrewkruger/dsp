@@ -15,7 +15,16 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
+    cnt = 0
+    for word in words:
+      if len(word) > 1 and word[0] == word[-1]:
+        cnt+=1
+    return cnt
     raise NotImplementedError
+
+print match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
+print match_ends(['', 'x', 'xy', 'xyx', 'xx'])
+print match_ends(['aaa', 'be', 'abc', 'hello'])
 
 
 def front_x(words):
