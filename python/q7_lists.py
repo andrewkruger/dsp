@@ -22,6 +22,7 @@ def match_ends(words):
     return cnt
     raise NotImplementedError
 
+print '\nmatch_ends:'
 print match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
 print match_ends(['', 'x', 'xy', 'xyx', 'xx'])
 print match_ends(['aaa', 'be', 'abc', 'hello'])
@@ -58,7 +59,13 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
+    return sorted(tuples, key=lambda tup: (tup[-1]))
     raise NotImplementedError
+
+print '\nsort_last:'
+print sort_last([(1, 3), (3, 2), (2, 1)])
+print sort_last([(2, 3), (1, 2), (3, 1)])
+print sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
 
 
 def remove_adjacent(nums):
@@ -84,6 +91,7 @@ def remove_adjacent(nums):
     return n_out
     raise NotImplementedError
 
+print '\nremove_adjacent:'
 print remove_adjacent([1, 2, 2, 3])
 print remove_adjacent([2, 2, 3, 3, 3])
 print remove_adjacent([3, 2, 3, 3, 3])
@@ -122,6 +130,7 @@ def linear_merge(list1, list2):
     return out_list
     raise NotImplementedError
 
+print '\nlinear_merge:'
 print linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
 print linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz'])
 print linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
