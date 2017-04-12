@@ -47,3 +47,59 @@ print "\n3.9) A*A^T ="
 print np.matmul(A,A.T)
 print "\n3.10) D^T*D ="
 print np.matmul(D.T,D)
+
+
+'''
+==============OUTPUT================
+1. Matrix Deminsions (m x n)
+1.1) A: (2, 3)
+1.2) B: (2, 2)
+1.3) C: (3, 2)
+1.4) D: (2, 3)
+1.5) u: (4,)
+1.6) w: (4, 1)
+
+2. Vector Operations
+2.1) u+v = [ 9  7 -4  9]
+2.2) u-v = [ 3 -3 -2  1]
+2.3) alpha * u = [ 36  12 -18  30]
+2.4) u dot v = 51
+2.5) |u| = 8.60232526704
+
+3. Matrix Operations
+3.1) A+C is not defined because the two matrices need the same shape, but A has shape (2, 3) and C has shape (3, 2)
+
+3.2) A-C^T =
+[[-4 -7 -3]
+ [ 3  6  4]]
+
+3.3) C^T+3D =
+[[14  3  3]
+ [ 2  7  9]]
+
+3.4) B*A =
+[[-1 -5 -1]
+ [ 2  7  4]]
+
+3.5) B*A^T is not defined because the second dimension of B (which is  2 ) needs to be the same as the first dimension of A^T (which is  3 ).
+
+3.6) B*C is not defined because the second dimension of B (which is  2 ) needs to be the same as the first dimension of C (which is  3 ).
+
+3.7) C*B =
+[[ 5 -6]
+ [ 9 -8]
+ [ 6 -6]]
+
+3.8) B^4 =
+[[ 1 -4]
+ [ 0  1]]
+
+3.9) A*A^T =
+[[14 28]
+ [28 69]]
+
+3.10) D^T*D =
+[[10 -4  0]
+ [-4  8  8]
+ [ 0  8 10]]
+ '''
