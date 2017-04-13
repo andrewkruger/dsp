@@ -22,7 +22,7 @@ def match_ends(words):
     return cnt
     raise NotImplementedError
 
-print '\nmatch_ends:'
+print 'match_ends:'
 print match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
 print match_ends(['', 'x', 'xy', 'xyx', 'xx'])
 print match_ends(['aaa', 'be', 'abc', 'hello'])
@@ -42,8 +42,21 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
+    xwords = []
+    swords = []
+    for word in words:
+      if word[0] == 'x':
+        xwords.append(word)
+      else:
+        swords.append(word)
+    return sorted(xwords)+sorted(swords)
+      
     raise NotImplementedError
 
+print '\nfront_x:'
+print front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa'])
+print front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa'])
+print front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
 
 def sort_last(tuples):
     """
