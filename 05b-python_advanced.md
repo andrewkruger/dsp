@@ -17,14 +17,14 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 ### Part I - Regular Expressions  
 
 
-####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
+#### Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> There are 8 unique degrees. In order of frequency (first priority) and then alphabetical (second priority): BSEd = 1; JD = 1; MA = 1; MD = 1; MPH = 2; MS = 2; ScD = 6; PhD = 31
+>> *Note:* For each of these questions, the answers are in order of frequency (first priority) and then alphabetical (second priority). There are eight (8) unique degrees: BSEd = 1; JD = 1; MA = 1; MD = 1; MPH = 2; MS = 2; ScD = 6; PhD = 31
 
 
 #### Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> There are three different titles.  In order of frequency (first priority) and then alphabetical (second priority): Assistant Professor of Biostatistics = 12; Associate Professor of Biostatistics = 12; Professor of Biostatistics = 13.  There was one title of "Assistant Professor is Biostatistics", but this is assumed to be a typo so I replaced "is" with "of" for the count.
+>> There are three (3) different titles: Assistant Professor of Biostatistics = 12; Associate Professor of Biostatistics = 12; Professor of Biostatistics = 13.  There was one title of "Assistant Professor is Biostatistics", but this is assumed to be a typo so I replaced "is" with "of" for the count.
 
 
 #### Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
@@ -34,7 +34,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 #### Q4. Find how many different email domains there are (Ex:  mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.).  Print the list of unique email domains.
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> There are four (4) different email domains: cceb.med.upenn.edu = 1; email.chop.edu = 1; upenn.edu = 12; mail.med.upenn.edu = 23
 
 Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
 
