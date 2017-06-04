@@ -15,7 +15,7 @@ Review the [installation instructions](resources/jupyter_notebook_1_install.md) 
 >### Part 2:  Using the Notebook 
 Review the [notes on using Jupyter Notebook](resources/jupyter_notebook_2_use.md) and create a test notebook.  Do some practice and get accustomed to navigating around the notebook.  
 
- 
+>> I found Jupyter so useful that I made a tutorial for students in my Independent Research course on how to calibrate magnetometers: https://github.com/andrewkruger/Magnetometer_calibration/blob/master/MagCal.ipynb
  
  
 
