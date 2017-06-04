@@ -22,13 +22,12 @@ def donuts(count):
       return str_out+str(count)
     else:
       return str_out+'many'
-    raise NotImplementedError
 
-print '\ndonuts:'
-print donuts(4)
-print donuts(9)
-print donuts(10)
-print donuts(99)
+print('\ndonuts:')
+print(donuts(4))
+print(donuts(9))
+print(donuts(10))
+print(donuts(99))
 
 def both_ends(s):
     """
@@ -49,13 +48,12 @@ def both_ends(s):
       return s[:2]+s[-2:]
     else:
       return ''
-    raise NotImplementedError
 
-print '\nboth_ends:'
-print both_ends('spring')
-print both_ends('Hello')
-print both_ends('a')
-print both_ends('xyz')
+print('\nboth_ends:')
+print(both_ends('spring'))
+print(both_ends('Hello'))
+print(both_ends('a'))
+print(both_ends('xyz'))
 
 def fix_start(s):
     """
@@ -75,13 +73,12 @@ def fix_start(s):
     for i in range(len(s)-1):
       s = s[:i+1]+s[i+1:].replace(s[i],'*')
     return s
-    raise NotImplementedError
 
-print '\nfix_start:'
-print fix_start('babble')
-print fix_start('aardvark')
-print fix_start('google')
-print fix_start('donut')
+print('\nfix_start:')
+print(fix_start('babble'))
+print(fix_start('aardvark'))
+print(fix_start('google'))
+print(fix_start('donut'))
 
 def mix_up(a, b):
     """
@@ -98,13 +95,12 @@ def mix_up(a, b):
     'fizzy perm'
     """
     return b[:2]+a[2:]+' '+a[:2]+b[2:]
-    raise NotImplementedError
 
-print '\nmix_up:'
-print mix_up('mix', 'pod')
-print mix_up('dog', 'dinner')
-print mix_up('gnash', 'sport')
-print mix_up('pezzy', 'firm')
+print('\nmix_up:')
+print(mix_up('mix', 'pod'))
+print(mix_up('dog', 'dinner'))
+print(mix_up('gnash', 'sport'))
+print(mix_up('pezzy', 'firm'))
 
 def verbing(s):
     """
@@ -125,12 +121,11 @@ def verbing(s):
       return s+'ly'
     else:
       return s+'ing'
-    raise NotImplementedError
 
-print '\nverbing:'
-print verbing('hail')
-print verbing('swiming')
-print verbing('do')
+print('\nverbing:')
+print(verbing('hail'))
+print(verbing('swiming'))
+print(verbing('do'))
 
 def not_bad(s):
     """
@@ -154,13 +149,12 @@ def not_bad(s):
       if bad_str != -1:
         return s[:not_str]+'good'+s[bad_str+3:]
     return s
-    raise NotImplementedError
 
-print '\nnot_bad:'
-print not_bad('This movie is not so bad')
-print not_bad('This dinner is not that bad!')
-print not_bad('This tea is not hot')
-print not_bad("It's bad yet not")
+print('\nnot_bad:')
+print(not_bad('This movie is not so bad'))
+print(not_bad('This dinner is not that bad!'))
+print(not_bad('This tea is not hot'))
+print(not_bad("It's bad yet not"))
 
 def front_back(a, b):
     """
@@ -177,12 +171,11 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    ma = len(a)/2+len(a)%2
-    mb = len(b)/2+len(b)%2
+    ma = len(a)//2+len(a)%2
+    mb = len(b)//2+len(b)%2
     return a[:ma]+b[:mb]+a[ma:]+b[mb:]
-    raise NotImplementedError
 
-print '\nfront_back:'
-print front_back('abcd', 'xy')
-print front_back('abcde', 'xyz')
-print front_back('Kitten', 'Donut')
+print('\nfront_back:')
+print(front_back('abcd', 'xy'))
+print(front_back('abcde', 'xyz'))
+print(front_back('Kitten', 'Donut'))
