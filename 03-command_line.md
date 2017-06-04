@@ -3,19 +3,38 @@
 Please follow and complete the free online [Command Line Crash Course
 tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehardway.org/book/) or [Codecademy's Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line). These are helpful tutorials. Each "chapter" focuses on a command. Type the commands you see in the _Do This_ section, and read the _You Learned This_ section. Move on to the next chapter. You should be able to go through these in a couple of hours.
 
+>> Crash Course:
+>>
+>>
+>> pwd: Print path of working directory.  Commands:
+>>
+>> hostname: Print computer's name.
+>>
+>> mkdir: Make a directory.
+>> mkdir temp
+>> mkdir temp
+>> mkdir temp/stuff
+>> mkdir temp/stuff/things
+>> mkdir -p temp/stuff/things/frank/joe/alex/john
+>>
+>> cd: Change directory.
+>>
+>> 
+>> CodeAcademy tutorial:
+
 ---
 
 ### Q1.  Cheat Sheet of Commands  
 
 Here's a list of items with which you should be familiar:  
-* show current working directory path
-* creating a directory
-* deleting a directory
-* creating a file using `touch` command
-* deleting a file
-* renaming a file
-* listing hidden files
-* copying a file from one directory to another
+* show current working directory path: pwd
+* creating a directory: mkdir dirname
+* deleting a directory: rm -r dirname
+* creating a file using `touch` command: touch filename
+* deleting a file: rm filename
+* renaming a file: mv filename newfilename
+* listing hidden files: ls -a
+* copying a file from one directory to another: cp dirname/filename newdirname/
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
