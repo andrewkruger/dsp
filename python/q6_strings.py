@@ -44,7 +44,7 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    if len(s) > 2:
+    if len(s) > 1:
       return s[:2]+s[-2:]
     else:
       return ''
