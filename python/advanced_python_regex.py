@@ -157,27 +157,6 @@ for domain in sorted(domains):
     print(domain)
 
 
-#### Q5) Write to File
-
-def write_to_csv(list_of_emails):
-    with open('emails.csv', 'w') as f:
-        f.write('list_of_emails\n')
-        for email in list_of_emails:
-            f.write(email+'\n')
-
-emails = list(map(str.strip, sys.stdin.readlines()))
-write_to_csv(emails)
-assert os.path.exists('emails.csv'), 'did you write to "emails.csv"?'
-with open('emails.csv', 'r') as f:
-    header = f.readline()
-    emails2 = []
-    for line in f.readlines():
-        emails2.append(line.strip())        
-os.remove('emails.csv')
-assert all(i == j for i, j in zip(emails, emails2)), 'this list of emails is different'
-assert len(emails) == len(emails2), 'this list of emails is different'
-print(1)
-
 
 ''' USING PANDAS
 ####Q1)
