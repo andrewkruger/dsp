@@ -56,7 +56,16 @@ $ print(c)
 ```
 
 >> This again calls each element of `a`, using the elements as the parameter `x` for the function `x**2`.
->>
+>> 
+>> You can also save a lambda function to a variable.  The following creates the function `f()` that returns the even values from a list, `my_list`:
+
+```
+$ f = lambda my_list: [x for x in my_list if x%2==0]
+$ my_evens = f(a)
+$ print(my_evens)
+[4, 6]
+```
+
 >> An example of using a `lambda` function as a `key` argument for `sorted` is [when sorting a list of tuples by the last number in each tuple](https://github.com/andrewkruger/dsp/blob/master/python/q7_lists.py#L73):
 
 ```
@@ -70,7 +79,11 @@ $ sorted(tuples, key=lambda tup: (tup[-1]))
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> If you want to create a filter that returns the numbers in a list that are divisible by 10 to a list called `tens_list`, you can use:
+
+```
+$ tens_list = filter(lambda x: x%10==0, xlist)
+```
 
 ---
 
