@@ -15,11 +15,18 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    cnt = 0
-    for word in words:
+    #List comprehension
+    return len([w for w in s if (len(w)>1) and (w[0]==w[-1])])
+    #Or, using lambda:
+    '''
+    return len(list(filter(lambda w: (len(w)>1) and (w[0]==w[-1]), s)))
+    '''
+    #Or, more basic:
+    '''cnt = 0
+    for word in s:
       if len(word) > 1 and word[0] == word[-1]:
         cnt+=1
-    return cnt
+    return cnt'''
 
 print('match_ends:')
 print(match_ends(['aba', 'xyz', 'aa', 'x', 'bbb']))
@@ -41,7 +48,14 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    xwords = []
+    #List comprehension:
+    return sorted([w for w in words if w[0]=='x'])+sorted([w for w in words if w[0]!='x'])
+    #Or, using lambda:
+    '''return sorted(list(filter(lambda w: w[0]=='x', words))) +\
+        sorted(list(filter(lambda w: w[0]!='x', words)))
+    '''
+    #Or, more basic:
+    '''xwords = []
     swords = []
     for word in words:
       if word[0] == 'x':
@@ -49,6 +63,7 @@ def front_x(words):
       else:
         swords.append(word)
     return sorted(xwords)+sorted(swords)
+    '''
     
 print('\nfront_x:')
 print(front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa']))
@@ -121,22 +136,12 @@ def linear_merge(list1, list2):
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
     out_list = []
-    len1 = len(list1)
-    len2 = len(list2)
-    n1 = 0
-    n2 = 0
-    while n1 < len1 and n2 < len2:
-      if list1[n1] < list2[n2]:
-        out_list.append(list1[n1])
-        n1+=1
+    while list1 and list2:
+      if list1[0] < list2[0]:
+        out_list.append(list1.pop(0))
       else:
-        out_list.append(list2[n2])
-        n2+=1
-    for x in list1[n1:]:  #get any remainder items
-      out_list.append(x)
-    for x in list2[n2:]:
-      out_list.append(x)
-    return out_list
+        out_list.append(list2.pop(0))
+    return out_list+list1+list2
 
 print('\nlinear_merge:')
 print(linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc']))
