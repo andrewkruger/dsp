@@ -20,12 +20,11 @@ def match_ends(words):
       if len(word) > 1 and word[0] == word[-1]:
         cnt+=1
     return cnt
-    raise NotImplementedError
 
-print 'match_ends:'
-print match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
-print match_ends(['', 'x', 'xy', 'xyx', 'xx'])
-print match_ends(['aaa', 'be', 'abc', 'hello'])
+print('match_ends:')
+print(match_ends(['aba', 'xyz', 'aa', 'x', 'bbb']))
+print(match_ends(['', 'x', 'xy', 'xyx', 'xx']))
+print(match_ends(['aaa', 'be', 'abc', 'hello']))
 
 
 def front_x(words):
@@ -50,13 +49,12 @@ def front_x(words):
       else:
         swords.append(word)
     return sorted(xwords)+sorted(swords)
-      
-    raise NotImplementedError
+    
+print('\nfront_x:')
+print(front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa']))
+print(front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa']))
+print(front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark']))
 
-print '\nfront_x:'
-print front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa'])
-print front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa'])
-print front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
 
 def sort_last(tuples):
     """
@@ -73,12 +71,11 @@ def sort_last(tuples):
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
     return sorted(tuples, key=lambda tup: (tup[-1]))
-    raise NotImplementedError
 
-print '\nsort_last:'
-print sort_last([(1, 3), (3, 2), (2, 1)])
-print sort_last([(2, 3), (1, 2), (3, 1)])
-print sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
+print('\nsort_last:')
+print(sort_last([(1, 3), (3, 2), (2, 1)]))
+print(sort_last([(2, 3), (1, 2), (3, 1)]))
+print(sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)]))
 
 
 def remove_adjacent(nums):
@@ -102,12 +99,11 @@ def remove_adjacent(nums):
       if nums[i] != nums[i-1]:
         n_out.append(nums[i])
     return n_out
-    raise NotImplementedError
 
-print '\nremove_adjacent:'
-print remove_adjacent([1, 2, 2, 3])
-print remove_adjacent([2, 2, 3, 3, 3])
-print remove_adjacent([3, 2, 3, 3, 3])
+print('\nremove_adjacent:')
+print(remove_adjacent([1, 2, 2, 3]))
+print(remove_adjacent([2, 2, 3, 3, 3]))
+print(remove_adjacent([3, 2, 3, 3, 3]))
 
 
 def linear_merge(list1, list2):
@@ -141,9 +137,8 @@ def linear_merge(list1, list2):
     for x in list2[n2:]:
       out_list.append(x)
     return out_list
-    raise NotImplementedError
 
-print '\nlinear_merge:'
-print linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
-print linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz'])
-print linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
+print('\nlinear_merge:')
+print(linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc']))
+print(linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz']))
+print(linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb']))
