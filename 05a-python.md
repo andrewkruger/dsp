@@ -79,6 +79,14 @@ $ sorted(tuples, key=lambda tup: (tup[-1]))
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
+
+>> Example:
+
+```
+celsius = [39.2, 36.5, 37.3, 0, 20]
+fahrenheit = [x*9/5+32 for x in celsius]
+```
+
 >> If you want to create a filter that returns the numbers in a list that are divisible by 10 to a list called `tens_list`, you can use:
 
 ```
