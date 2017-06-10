@@ -26,7 +26,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >> Lists and sets both used to store multiple objects such as strings or numerical values.  Unlike lists, sets are unordered so you can't refer to objects by index position, and sets cannot hold duplicate objects.  They also have very different operations, largely because of the different characteristics of sets and lists.
 >>
->> As an example, you can add two lists together (let's call them A and B) by the operation "A + B".  This will return a new list that contains all the elements of A and B, including duplicates.  But to combine two sets (let's call them X and Y), you can't make a new set that retains the duplicate elements, and you can't use the operation "+".  But you can find the union of the two sets by "X | Y" which will return a set containing all elements in X and Y but no duplicates.  Or you can find the intersection of the two sets by "X & Y", which will return a set of elements in both X and Y.
+>> As an example, you can add two lists together (let's call them `A` and `B`) by the operation `A + B`.  This will return a new list that contains all the elements of `A` and `B`, including duplicates.  But to combine two sets (let's call them X and Y), you can't make a new set that retains the duplicate elements, and you can't use the operation `+`.  But you can find the union of the two sets by `X | Y` which will return a set containing all elements in X and Y but no duplicates.  Or you can find the intersection of the two sets by `X & Y`, which will return a set of elements in both X and Y.
 >>
 >> Sets are faster when searching for an element.  When you add an object to a set, a hash is used to record its position in memory.  So if you want to know if that object is a member of a set, the hash table will tell you where to look in memory.  Since a list isn't hashable, you have to search throughout the list to know if an object is a member.
 
@@ -36,7 +36,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> The lambda is used to make anonymous functions.  It behaves the same as a function, and returns a value (although, without using a "return"), but it can be used without assigning a variable to the function being performed.  They take the form of "lambda <arguments>: <expressions>".  Lambdas are useful for making functions that can be used as arguments for other functions, such as `map()`, `filter()`, or `reduce()`.
+>> The lambda is used to make anonymous functions.  It behaves the same as a function, and returns a value (although, without using a `return`), but it can be used without assigning a variable to the function being performed.  They take the form of `lambda <arguments>: <expressions>`.  Lambdas are useful for making functions that can be used as arguments for other functions, such as `map()`, `filter()`, or `reduce()`.
 >>
 >> As an comparison to list comprehension, we can use the following:
 
