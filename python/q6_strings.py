@@ -29,6 +29,7 @@ print(donuts(9))
 print(donuts(10))
 print(donuts(99))
 
+
 def both_ends(s):
     """
     Given a string s, return a string made of the first 2 and the last
@@ -55,6 +56,7 @@ print(both_ends('Hello'))
 print(both_ends('a'))
 print(both_ends('xyz'))
 
+
 def fix_start(s):
     """
     Given a string s, return a string where all occurences of its
@@ -71,14 +73,14 @@ def fix_start(s):
     'donut'
     """
     for i in range(len(s)-1):
-      s = s[:i+1]+s[i+1:].replace(s[i],'*')
-    return s
+        return s[0]+s[1:].replace(s[0],'*')
 
 print('\nfix_start:')
 print(fix_start('babble'))
 print(fix_start('aardvark'))
 print(fix_start('google'))
 print(fix_start('donut'))
+
 
 def mix_up(a, b):
     """
@@ -101,6 +103,7 @@ print(mix_up('mix', 'pod'))
 print(mix_up('dog', 'dinner'))
 print(mix_up('gnash', 'sport'))
 print(mix_up('pezzy', 'firm'))
+
 
 def verbing(s):
     """
@@ -126,6 +129,7 @@ print('\nverbing:')
 print(verbing('hail'))
 print(verbing('swiming'))
 print(verbing('do'))
+
 
 def not_bad(s):
     """
@@ -155,6 +159,7 @@ print(not_bad('This movie is not so bad'))
 print(not_bad('This dinner is not that bad!'))
 print(not_bad('This tea is not hot'))
 print(not_bad("It's bad yet not"))
+
 
 def front_back(a, b):
     """
