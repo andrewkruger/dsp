@@ -36,8 +36,32 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> The lambda is used to make anonymous functions.  It behaves the same as a function, and returns a value (although, without using a "return"), but it can be used without assigning a variable to the function being performed.  They take the form of "lambda <arguments>: <expressions>".  Lambdas are useful for making functions that can be used as arguments for other functions, such as map(), filter(), or reduce().
+>> The lambda is used to make anonymous functions.  It behaves the same as a function, and returns a value (although, without using a "return"), but it can be used without assigning a variable to the function being performed.  They take the form of "lambda <arguments>: <expressions>".  Lambdas are useful for making functions that can be used as arguments for other functions, such as `map()`, `filter()`, or `reduce()`.
 >>
+>> As an comparison to list comprehension, we can use the following:
+
+```
+$ a = [4, 5, 6, 7]
+$ b = [x**2 for x in a]
+$ print(b)
+[16, 25, 36, 49]
+```
+
+>> The `[x**2 for x in a]` returns the square of each element in `a`, which it does by temporarily calling each element `x` and performing the function `x**2`.  Similarly, we can do the following: 
+
+```
+$ c = list(map(lambda x : x**2, a))
+$ print(c)
+[16, 25, 36, 49]
+```
+
+>> This again calls each element of `a`, using the elements as the parameter `x` for the function `x**2`.
+>>
+>> An example of using a `lambda` function as a `key` argument for `sorted` is [when sorting a list of tuples by the last number in each tuple](https://github.com/andrewkruger/dsp/blob/master/python/q7_lists.py#L73):
+
+```
+$ sorted(tuples, key=lambda tup: (tup[-1]))
+```
 
 
 ---
