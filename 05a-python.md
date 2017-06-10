@@ -38,7 +38,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 >> The lambda is used to make anonymous functions.  It behaves the same as a function, and returns a value (although, without using a `return`), but it can be used without assigning a variable to the function being performed.  They take the form of `lambda <arguments>: <expressions>`.  Lambdas are useful for making functions that can be used as arguments for other functions, such as `map()`, `filter()`, or `reduce()`.
 >>
->> As an comparison to list comprehension, we can use the following:
+>> As an comparison to [list comprehension](https://github.com/andrewkruger/dsp/blob/master/05a-python.md#q4-list-comprehension-map--filter), we can use the following:
 
 ```
 $ a = [4, 5, 6, 7]
