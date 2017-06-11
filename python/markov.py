@@ -15,7 +15,7 @@
 
 # Note: This program starts with the start of a sentence it identified in the text.
 
-```
+
 import argparse
 import string
 import random
@@ -98,4 +98,3 @@ for i in range(nwords - 2):
 #Print text:
     
 print out_string
-```
