@@ -1,3 +1,69 @@
+# Do not change these variables
+A = np.array([[1,2,3],[2,7,4]])
+B = np.array([[1,-1],[0,1]])
+C = np.array([[5,-1],[9,1],[6,0]])
+D = np.array([[3,-2,-1],[1,2,3]])
+
+u = np.array([6,2,-3,5])
+v = np.array([3,5,-1,4])
+
+# Q1: record the dimensions of A, B, C, D, u, v respectively in the dict below. 
+#     Do not type the answers, make python do the work
+
+dimensions = {
+    'A': A.shape,
+    'B': B.shape,
+    'C': C.shape,
+    'D': D.shape,
+    'u': u.shape,
+    'v': v.shape
+}
+
+# Q2: vector operations
+#     assign `None` if the operation is not defined
+#     do not type the answers, make python do the work
+alpha = 6
+
+u_plus_v = u+v            # u+v
+u_minus_v = u-v           # u-v
+alpha_times_u = alpha*u       # alpha * u, alpha = 6
+u_dot_v = np.dot(u,v)             # u . v
+norm_u = np.linalg.norm(u)              # ||u|| 
+
+
+# Q3: compute the following and assign to variables below:
+#     assign `None` if the operation is not defined
+#     do not type the answers, make python do the work
+
+try:
+    A_plus_C = A + C             # A + C
+except:
+    A_plus_C = None
+
+A_minus_Ctranspose = A - np.transpose(C)   # A - C.T
+Ctranspose_plus_3D = np.transpose(C) + 3*D   # C.T + 3*D
+B_times_A = np.matmul(B, A)            # B*A
+
+try:
+    B_times_Atranspose = np.matmul(B,np.transpose(A))   # B*A.T
+except:
+    B_times_Atranspose = None
+
+# Q4: (bonus)
+
+try:
+    B_times_C = np.matmul(B, C)            # B*C
+except:
+    B_times_C = None
+    
+C_times_B = np.matmul(C, B)            # C*B
+B_exp_4 = np.linalg.matrix_power(B, 4)              # B^4
+A_times_Atranspose = np.matmul(A,np.transpose(A))
+Dtranspose_times_D = np.matmul(np.transpose(D), D)   # D.T*D
+
+
+''' Original (pre-HackerRank)
+
 # Matrix Algebra
 
 import numpy as np
@@ -49,7 +115,6 @@ print "\n3.10) D^T*D ="
 print np.matmul(D.T,D)
 
 
-'''
 ==============OUTPUT================
 1. Matrix Deminsions (m x n)
 1.1) A: (2, 3)
