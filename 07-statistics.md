@@ -91,7 +91,11 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Frequentist and Bayesian statistics both use the frequency at which things appear (observations) to estimate probabilities, but with some differences, including: 
+>> 1) Bayesian also uses prior probability distributions before any observations are made.  As new observations are made, the prior probability gets updated to become a posterior probability distribution.
+>> 2) Frequentist returns the probability model based only on the observed values, while Bayesian also estimates the parameters of a distribution for a population including the unobserved values.
+>> 3) Bayesian accounts better for inaccurate and rare observations.  As an example, if a test for a disease has a probability of being correct given a positive result, a Frequentist will use that as the probability of the person actually having a disease when a test returns a positive. The Bayesian will also take into account the rarity of the disease based on the relationship that the probability of A given B is P(A|B)=P(B|A)\*P(A)/P(B).  This means the probabilty of being sick given that a test is positive, P(sick|pos), is the probility of getting a positive test while sick, P(pos|sick), multiplied by the probability of being sick, P(A), divided by the probability of getting a positive test, P(B).  This means the probability of actually being sick given a positive test is lower for rarer diseases.
+
 
 ---
 
