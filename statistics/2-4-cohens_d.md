@@ -2,6 +2,8 @@
 
 >> Non-first born babies have a mean total weight that is 0.12lbs higher than first born babies.  However, the Cohen's *d* for this comparison is 0.089.  This is 3.1x greater than the Cohen's *d* for the pregnancy length difference between these two groups, which was 0.029.  While this is an increase in effect size, there still isn't a significant difference between first born and non-first born babies as this is still a small value.  Visual inspection of the histograms indicates this is a reasonable Cohen's *d* as there is no obvious difference between the histograms of the two data sets.  
 
+Code used to get answer:
+
 ```
 import thinkplot
 import nsfg
